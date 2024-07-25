@@ -1945,29 +1945,6 @@ input, select, textarea {
 		
 	}
 
-	.icon_resume {
-		width: 50px;
-		height: 50px;
-		border: 3px solid transparent;
-		position: absolute;
-		transform: rotate(45deg);
-		right: 0;
-		top: 0;
-		z-index: -1;
-		transition: all .35s;
-	}
-
-	.icon_resume svg{
-		width: 30px;
-		position: absolute;
-		top: calc(50% - 15px);
-		left: calc(50% - 15px);
-		transform: rotate(-45deg);
-		fill: #2ecc71;
-		transition: all .35s;
-	}
-
-
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2007,6 +1984,28 @@ input, select, textarea {
 			.icon.featured:before {
 				font-size: 6em;
 			}
+	
+	.icon_resume {
+		width: 50px;
+		height: 50px;
+		border: 3px solid transparent;
+		position: absolute;
+		transform: rotate(45deg);
+		right: 0;
+		top: 0;
+		z-index: -1;
+		transition: all .35s;
+	}
+
+	.icon_resume svg{
+		width: 30px;
+		position: absolute;
+		top: calc(50% - 15px);
+		left: calc(50% - 15px);
+		transform: rotate(-45deg);
+		fill: #2ecc71;
+		transition: all .35s;
+	}
 
 
 
@@ -2046,6 +2045,17 @@ input, select, textarea {
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
+	}
+
+	.wrapper_resume {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-10%, -50%);
+	}
+
+	.link_wrapper {
+		position: relative;
 	}
 
 		.wrapper.style1 {
@@ -2088,16 +2098,7 @@ input, select, textarea {
 					background: #252525;
 				}
 		
-		.wrapper_resume {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		.link_wrapper {
-			position: relative;
-		}
+		
 
 /* Nav */
 
