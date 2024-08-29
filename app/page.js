@@ -115,11 +115,6 @@ export default function Home() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
 
-          <Head>
-            <title>Deepanshu Chalia</title>
-            <meta property="og:image" content="/title_image.jpg" />
-          </Head>
-
           <ThemeProvider theme={glowBorder}>
             <AppBar>
               <Toolbar disableGutters sx={{ paddingLeft: 0.5, paddingRight: 0.5 }} >    
@@ -145,7 +140,7 @@ export default function Home() {
               mb: { xs: 10, md: 10, lg: 10 }
             }}
           >
-            <Avatar alt='Deepanshu Chalia' src="/Deepc.jpg" 
+            <Avatar alt='Deepanshu Chalia' src="public/Deepc.jpg" 
               sx={{ 
                 width: { xs: 400, md: 450 }, 
                 height: { xs: 400, md: 450 }, 
