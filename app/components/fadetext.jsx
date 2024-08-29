@@ -25,7 +25,7 @@ export default function Effect(props) {
     
     return (
         <Stack direction={'row'} spacing={2} >
-            <Typography variant='h1'>Hello, I'm</Typography>
+            <Typography variant='h1'>Hello, I&apos;m</Typography>
             <Typography
                 variant='h1'
                 sx={{
