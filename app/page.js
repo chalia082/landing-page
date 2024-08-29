@@ -8,7 +8,6 @@ import { ThemeProvider } from '@emotion/react';
 import Head from 'next/head';
 import { AppBar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Container, createTheme, CssBaseline, Divider, Fade, Grid, Grow, IconButton, Paper, Slide, Stack, styled, Toolbar, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
-import SimpleGrow from './components/grow';
 import { useEffect, useRef, useState } from 'react';
 import Effect from './components/fadetext';
 import MyAppBar from './components/appbar';
@@ -51,7 +50,7 @@ export default function Home() {
         observer.unobserve(boxRef1.current)
       }
     }
-  }, [])
+  }, [boxRef1])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -75,7 +74,7 @@ export default function Home() {
         observer.unobserve(boxRef1.current)
       }
     }
-  }, [])
+  }, [boxRef1])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -99,7 +98,7 @@ export default function Home() {
         observer.unobserve(boxRef2.current)
       }
     }
-  }, [])
+  }, [boxRef2])
 
   useEffect(() => {
     setFadeChecked(true)
@@ -448,7 +447,7 @@ export default function Home() {
         <section id='contact'>
         <Box display={'flex'} width={'100%'} mt={20} mb={5} justifyContent={'center'} alignItems={'center'} flexDirection={'column'} gap={2} >
           <Box>
-            <IconButton color='inherit' target='_blank'  href='https://github.com/chalia082' ><GitHubIcon fontSize='large' /></IconButton>
+            <IconButton color='inherit' target='_blank' href='https://github.com/chalia082' ><GitHubIcon fontSize='large' /></IconButton>
             <IconButton color='inherit' target='_blank' href='https://www.linkedin.com/in/deep-chalia/' ><LinkedIn fontSize='large' /></IconButton>
             <IconButton color='inherit' target='_blank' href='https://x.com/ChaliaDeepanshu' ><X fontSize='large' sx={{ '&:hover': {color: 'black '} }} /></IconButton>
             <IconButton color='inherit' target='_blank' href='https://www.instagram.com/deepanshu.chalia/' ><Instagram fontSize='large' /></IconButton>

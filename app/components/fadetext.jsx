@@ -2,10 +2,7 @@
 
 import { Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { keyframes } from '@mui/material/styles';
-// import { useTheme } from '@mui/styles';
 
-
-// Inside the Home component
 
 const gradientAnimation = keyframes`
     0% {
