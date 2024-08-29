@@ -335,7 +335,7 @@ export default function Home() {
               </Button>
           
             <Typography variant='h6' sx={{ opacity: 0.7, color: 'grey', fontWeight: 'normal', letterSpacing: 2, textAlign: 'center' }}>
-              In a rapidly advancing digital era, powered by Gen-AI, I envision data as the fundamental building block of tomorrow. I'm Deepanshu Chalia, eager to contribute my skills to shaping this future.
+              In a rapidly advancing digital era, powered by Gen-AI, I envision data as the fundamental building block of tomorrow. I&apos;m Deepanshu Chalia, eager to contribute my skills to shaping this future.
             </Typography>
           </Stack> 
 
