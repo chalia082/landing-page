@@ -3,14 +3,11 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
 import theme from './components/theme';
 import glowBorder from './components/glowBorder';
-import TransitionHover from './components/styledavatar';
 import { ThemeProvider } from '@emotion/react';
-import Head from 'next/head';
 import { AppBar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Container, createTheme, CssBaseline, Divider, Fade, Grid, Grow, IconButton, Paper, Slide, Stack, styled, Toolbar, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { useEffect, useRef, useState } from 'react';
 import Effect from './components/fadetext';
-import MyAppBar from './components/appbar';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Facebook, Instagram, LinkedIn, X } from '@mui/icons-material';
 
@@ -149,10 +146,7 @@ export default function Home() {
               }} />
             <Stack direction={'column'} width={'100%'} spacing={2} sx={{ alignItems: 'center' }} > 
                 <Fade in={fadeChecked} timeout={2000} style={{ transitionDelay: fadeChecked ? '0ms' : '2000ms' }}>
-                <Box sx={{
-                  // display: 'flex',
-                  // flexDirection: { xs: 'column', md: 'row' }
-                }}>
+                <Box>
                   <Effect value="Deepanshu Chalia" />
                 </Box>
               </Fade>
@@ -182,7 +176,7 @@ export default function Home() {
                   backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
                   transition: 'background 1000ms ease',
                   transitionDuration: '1s',
-                  color: 'white',
+                  color: 'white', 
                 },
                 mb: 10
               }}
