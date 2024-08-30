@@ -140,7 +140,7 @@ export default function Home() {
               mb: { xs: 10, md: 10, lg: 10 }
             }}
           >
-            <Avatar alt='Deepanshu Chalia' src="public/Deepc.jpg" 
+            <Avatar alt='Deepanshu Chalia' src="/Deepc.jpg" 
               sx={{ 
                 width: { xs: 400, md: 450 }, 
                 height: { xs: 400, md: 450 }, 
