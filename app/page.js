@@ -22,9 +22,6 @@ export default function Home() {
   const boxRef1 = useRef(null)
   const boxRef2 = useRef(null)
 
-  
-  
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -107,7 +104,7 @@ export default function Home() {
   }
 
   return (
-      <Container sx={{ minWidth: 1800 }} >
+      <Container  >
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
           <CssBaseline />
@@ -117,7 +114,7 @@ export default function Home() {
               <Toolbar disableGutters sx={{ paddingLeft: 0.5, paddingRight: 0.5 }} >    
                 <Stack display='flex' direction="row" spacing={1} >
                   <Button onClick={() => handleScroll('home')}>Home</Button>
-                  <Button onClick={() =>handleScroll('portfolio')}>Portfolio</Button>
+                  <Button onClick={() => handleScroll('portfolio')}>Portfolio</Button>
                   <Button onClick={() => handleScroll('journey')}>Journey</Button>
                   <Button onClick={() => handleScroll('contact')}>Contact</Button>
                 </Stack>        
@@ -137,20 +134,27 @@ export default function Home() {
               mb: { xs: 10, md: 10, lg: 10 }
             }}
           >
-            <Avatar alt='Deepanshu Chalia' src="/Deepc.jpg" 
-              sx={{ 
-                width: { xs: 400, md: 450 }, 
-                height: { xs: 400, md: 450 }, 
-                boxShadow: '4px 4px 8px rgba(0,0,0,0.25)',
-                position: 'relative'
-              }} />
-            <Stack direction={'column'} width={'100%'} spacing={2} sx={{ alignItems: 'center' }} > 
+            <Box
+                component="img"
+                sx={{
+                    height: "auto",
+                    width: "auto",
+                    maxHeight: { xs: 100, sm: 150, md: 300, lg: 400 },
+                    maxWidth: { xs: 100, sm: 150, md: 300, lg: 400 },
+                    borderRadius: '50%',
+                }}
+                alt="Descriptive Alt Text"
+                src="/Deepc.jpg"
+            />
+            <Stack direction={'column'} spacing={2} sx={{ alignItems: 'center' }} > 
                 <Fade in={fadeChecked} timeout={2000} style={{ transitionDelay: fadeChecked ? '0ms' : '2000ms' }}>
-                <Box>
-                  <Effect value="Deepanshu Chalia" />
-                </Box>
-              </Fade>
-              
+                  <Box>
+                    <Stack direction={'row'} spacing={3}>
+                      <Typography variant='h1'>Hello, I&apos;m</Typography>
+                      <Effect value="Deepanshu Chalia" />
+                    </Stack>
+                  </Box>
+                </Fade>
               <Typography sx={{ opacity: 0.7 }} color={'grey'} variant='h4'>Aspiring software engineer eager to tackle challenges effectively and efficiently.</Typography>
             </Stack>
           </Box>
@@ -190,17 +194,15 @@ export default function Home() {
 
           {/* Experience starts */}
           <section id='portfolio' >
-          <Grid container rowSpacing={5} columnSpacing={2} ref={boxRef1} flexWrap={'wrap'} margin={2}>
+          <Box>
+
+          
+          <Grid container ref={boxRef1} flexWrap={'wrap'}>
 
             <Grow in={checked1} style={{ transformOrigin: '0 0 0' }} {...(checked1 ? { timeout: 500 } : {})}>
-              <Grid item xs={12} md={6} lg={4} >
+              <Grid item xs={12} md={4} lg={4} >
                 <CardActionArea 
-                  sx={{ 
-                    minHeight: 400, 
-                    minHeight: 400, 
-                    borderRadius: 5, 
-                    alignContent: 'center'
-                  }} 
+                  sx={{ borderRadius: 5, alignContent: 'center' }} 
                   href='https://github.com/Headstarter-fellowship-projects/flashcard-saas/tree/Deep'
                 >
                   <CardContent >
@@ -216,8 +218,8 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked1} style={{ transformOrigin: '0 0 0' }} {...(checked1 ? { timeout: 1000 } : {})}>
-              <Grid item xs={12} md={6} lg={4} >
-                <CardActionArea  sx={{ minWidth: 500, minHeight: 400, borderRadius: 5, alignContent: 'center' }} href='https://github.com/Headstarter-fellowship-projects/ai_customer/tree/Deep' >
+              <Grid item xs={12} md={4} lg={4} >
+                <CardActionArea  sx={{ borderRadius: 5, alignContent: 'center' }} href='https://github.com/Headstarter-fellowship-projects/ai_customer/tree/Deep' >
                   <CardContent >
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Chatbot</strong>
@@ -231,8 +233,8 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked1} style={{ transformOrigin: '0 0 0' }} {...(checked1 ? { timeout: 1500 } : {})}>
-              <Grid item xs={12} md={6} lg={4}>
-                <CardActionArea sx={{ minWidth: 500, minHeight: 400, borderRadius: 5, alignContent: 'center' }} href='https://github.com/chalia082/Inventory-Management-System' >
+              <Grid item xs={12} md={4} lg={4}>
+                <CardActionArea sx={{ borderRadius: 5, alignContent: 'center' }} href='https://github.com/chalia082/Inventory-Management-System' >
                   <CardContent >
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Inventory Manager</strong>
@@ -246,8 +248,8 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked2} style={{ transformOrigin: '0 0 0' }} {...(checked2 ? { timeout: 500 } : {})}>
-              <Grid item xs={12} md={6} lg={4}>
-                <CardActionArea sx={{ minWidth: 500, minHeight: 400, borderRadius: 5, alignContent: 'center' }} href='https://www.linkedin.com/in/deep-chalia/details/experience' >
+              <Grid item xs={12} md={4} lg={4}>
+                <CardActionArea sx={{ borderRadius: 5, alignContent: 'center' }} href='https://www.linkedin.com/in/deep-chalia/details/experience' >
                   <CardContent >
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Research Assistant</strong>
@@ -261,8 +263,8 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked2} style={{ transformOrigin: '0 0 0' }} {...(checked2 ? { timeout: 1000 } : {})}>
-              <Grid item xs={12} md={6} lg={4}>
-                <CardActionArea sx={{ minWidth: 500, minHeight: 400, borderRadius: 5, alignContent: 'center' }} href='https://www.linkedin.com/in/deep-chalia/details/experience'>
+              <Grid item xs={12} md={4} lg={4}>
+                <CardActionArea sx={{ borderRadius: 5, alignContent: 'center' }} href='https://www.linkedin.com/in/deep-chalia/details/experience'>
                   <CardContent >
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Teaching Assistant</strong>
@@ -275,8 +277,8 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked2} style={{ transformOrigin: '0 0 0' }} {...(checked2 ? { timeout: 1500 } : {})}>
-              <Grid item xs={12} md={6} lg={4}>
-                <CardActionArea sx={{ minWidth: 500, minHeight: 400, borderRadius: 5, alignContent: 'center' }} href='https://www.linkedin.com/in/deep-chalia/details/experience' >
+              <Grid item xs={12} md={4} lg={4}>
+                <CardActionArea sx={{ borderRadius: 5, alignContent: 'center' }} href='https://www.linkedin.com/in/deep-chalia/details/experience' >
                   <CardContent >
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Power Station Research</strong>
@@ -289,6 +291,7 @@ export default function Home() {
             </Grow>
 
           </Grid>
+          </Box>
           </section>
           {/* Experience ends */}
 
@@ -332,6 +335,7 @@ export default function Home() {
 
           {/* Journey starts */}
           <section id='journey'>
+            <Box>
           <Grid container rowSpacing={5} columnSpacing={3} ref={boxRef2} flexWrap={'wrap'}>
 
             <Grow in={checked3} style={{ transformOrigin: '0 0 0' }} {...(checked3 ? { timeout: 500 } : {})}>
@@ -430,6 +434,7 @@ export default function Home() {
             </Grow>
 
           </Grid>
+          </Box>
           </section>
         {/* Journey ends */}
 

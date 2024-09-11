@@ -1,6 +1,6 @@
 'use client';
 import { Roboto } from 'next/font/google';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 const roboto = Roboto({
     weight: ['300', '400', '500', '700'],
@@ -8,7 +8,7 @@ const roboto = Roboto({
     display: 'swap',
 });
 
-const theme = createTheme({
+let theme = createTheme({
     typography: {
         fontFamily: roboto.style.fontFamily,
     },
@@ -17,22 +17,7 @@ const theme = createTheme({
     // },
 });
 
-// sx={{ 
-//     bgcolor: 'transparent', 
-//     color: 'black', border: '2px solid #a63b35', alignItems: 'center', marginTop: 3, borderRadius: 10, width: '25%', marginRight: '37%' }}
+theme = responsiveFontSizes(theme);
 
-// const glowBorder = createTheme({
-//     components: {
-//         MuiAppBar: {
-//             styleOverrides: {
-//                 root: {
-//                     bgcolor: 'transparent',
-//                     color: 'black',
-//                     border: '2px solid #a63b35'
-//                 }
-//             }
-//         }
-//     }
-// })
 
 export default theme;

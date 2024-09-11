@@ -1,7 +1,7 @@
 'use client'
 
 import { Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
-import { keyframes } from '@mui/material/styles';
+import { createTheme, keyframes, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 
 
 const gradientAnimation = keyframes`
@@ -17,15 +17,16 @@ const gradientAnimation = keyframes`
     }
 `;
 
-const transitionDuration = '2s';
+
+let theme = createTheme()
+theme = responsiveFontSizes(theme)
 
 export default function Effect(props) {
-    const theme = useTheme()
-    const isMediumScreen = useMediaQuery(theme.breakpoints.down("md"))
     
     return (
-        <Stack direction={'row'} spacing={2} >
-            <Typography variant='h1'>Hello, I&apos;m</Typography>
+        <ThemeProvider theme={theme}>
+        
+            
             <Typography
                 variant='h1'
                 sx={{
@@ -33,12 +34,13 @@ export default function Effect(props) {
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                     backgroundSize: '200% 200%',
-                    animation: `${gradientAnimation} ${transitionDuration} ease infinite`
+                    animation: `${gradientAnimation} 2s ease infinite`
                 }}
             >
                 <strong>{props.value}</strong>
             </Typography>
-        </Stack>
+        
+        </ThemeProvider>
     )
 }
 
