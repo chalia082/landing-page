@@ -17,7 +17,7 @@ const glowBorder = createTheme({
                         zIndex: -1,
                         position: 'absolute',
                         content: "''",
-                        width:'480px',
+                        width:'390px',
                         height: '50px',
                         backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
                         filter: 'blur(20px)'
@@ -31,7 +31,7 @@ const glowBorder = createTheme({
             },
             styleOverrides: {
                 root: {
-                    position: 'absolute',
+                    position: 'inherit',
                     backgroundColor: 'white',
                     filter: 'brightness(120%)',
                     borderRadius: 40,
@@ -46,7 +46,8 @@ const glowBorder = createTheme({
                 root: {
                     color: 'black', 
                     fontSize: 20, 
-                    fontWeight: 'normal',
+                    fontWeight: 'light',
+                    textTransform: 'capitalize'
                 }
             }
         },
@@ -59,7 +60,8 @@ const glowBorder = createTheme({
                     padding: 8
                 }
             }
-        }
+        },
+        
     }
 })
 

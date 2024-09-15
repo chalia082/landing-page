@@ -68,9 +68,18 @@ export default function Portfolio() {
             <Grid container ref={boxRef} flexWrap={'wrap'}>
                 {experiences.map((experience, index) => (
                     <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1000 } : {})} key={index}>
-                        <Grid item xs={12} md={4} lg={4} >
+                        <Grid item xs={12} sm={6} md={4} lg={4} 
+                            sx={{
+                                display: 'flex',
+                                
+                                justifyContent: 'center',
+                                
+                            }} 
+                        >
                             <CardActionArea 
                                 sx={{ 
+                                    minHeight: 250,
+                                    maxWidth: { xs: '70vw' },
                                     borderRadius: 5, 
                                     alignContent: 'center' 
                                 }} 

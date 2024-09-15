@@ -13,14 +13,14 @@ export default function Navbar() {
     return (
         <ThemeProvider theme={glowBorder}>
             <AppBar>
-            <Toolbar disableGutters sx={{ paddingLeft: 0.5, paddingRight: 0.5 }} >    
-                <Stack display='flex' direction="row" spacing={1} >
-                    <Button onClick={() => handleScroll('home')}>Home</Button>
-                    <Button onClick={() => handleScroll('portfolio')}>Portfolio</Button>
-                    <Button onClick={() => handleScroll('journey')}>Journey</Button>
-                    <Button onClick={() => handleScroll('contact')}>Contact</Button>
-                </Stack>        
-            </Toolbar>
+                <Toolbar disableGutters sx={{ paddingLeft: 0.5, paddingRight: 0.5 }} >    
+                    <Stack display='flex' direction="row" spacing={1} >
+                        <Button onClick={() => handleScroll('home')}>Home</Button>
+                        <Button onClick={() => handleScroll('portfolio')}>Portfolio</Button>
+                        <Button onClick={() => handleScroll('journey')}>Journey</Button>
+                        <Button onClick={() => handleScroll('contact')}>Contact</Button>
+                    </Stack>        
+                </Toolbar>
             </AppBar> 
         </ThemeProvider>
     )
