@@ -27,9 +27,7 @@ export default function Home() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setChecked1(true)
-        } else {
-          setChecked1(false)
-        }
+        } 
       }, {
         threshold: 0.3
       }
@@ -51,9 +49,7 @@ export default function Home() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setChecked2(true)
-        } else {
-          setChecked2(false)
-        }
+        } 
       }, {
         threshold: 0.5
       }
@@ -75,9 +71,7 @@ export default function Home() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setChecked3(true)
-        } else {
-          setChecked3(false)
-        }
+        } 
       }, {
         threshold: 0.3
       }
@@ -139,8 +133,8 @@ export default function Home() {
                 sx={{
                     height: "auto",
                     width: "auto",
-                    maxHeight: { xs: 100, sm: 150, md: 300, lg: 400 },
-                    maxWidth: { xs: 100, sm: 150, md: 300, lg: 400 },
+                    maxHeight: { xs: 200, sm: 300, md: 350 },
+                    maxWidth: { xs: 200, sm: 300, md: 350 },
                     borderRadius: '50%',
                 }}
                 alt="Descriptive Alt Text"
@@ -149,37 +143,34 @@ export default function Home() {
             <Stack direction={'column'} spacing={2} sx={{ alignItems: 'center' }} > 
                 <Fade in={fadeChecked} timeout={2000} style={{ transitionDelay: fadeChecked ? '0ms' : '2000ms' }}>
                   <Box>
-                    <Stack direction={'row'} spacing={3}>
-                      <Typography variant='h1'>Hello, I&apos;m</Typography>
+                    <Stack direction={{ md:'col', lg: 'col' }} spacing={3} display={'flex'} justifyContent={"center"}>
+                      <Typography variant='h1' sx={{ textAlign: { xs: 'center', sm: 'center', md: 'center', lg: 'left' } }}>Hello, I&apos;m</Typography>
                       <Effect value="Deepanshu Chalia" />
                     </Stack>
                   </Box>
                 </Fade>
-              <Typography sx={{ opacity: 0.7 }} color={'grey'} variant='h4'>Aspiring software engineer eager to tackle challenges effectively and efficiently.</Typography>
+              <Typography sx={{ opacity: 0.7, textAlign: { xs:'center', sm: 'center', md: 'center', lg: 'left'}, fontWeight: 'light' }} color={'grey'} variant='h4'>Aspiring software engineer eager to tackle challenges effectively and efficiently.</Typography>
             </Stack>
           </Box>
 
-          <Stack 
-            sx={{ 
-              position: 'relative',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
-          >
+          
             <Button 
               variant="conatined"
               onClick={() => handleScroll('portfolio')}
+              fullWidth
               sx={{ 
-                width: '35%',
-                align: 'center',
-                backgroundColor: 'white',
+                
+                fontWeight: 'light',
+                textAlign: 'center',
+                backgroundColor: 'inherit',
                 margin: 0.5,
                 borderRadius: 10,
                 fontSize: 35,
+                transition: 'background-image 1s ease-in-out 1s, color 0.5s ease-in-out',
                 ':hover': {
+                  
                   backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-                  transition: 'background 1000ms ease',
-                  transitionDuration: '1s',
+                  
                   color: 'white', 
                 },
                 mb: 10
@@ -187,7 +178,7 @@ export default function Home() {
             >
               Learn about my experience
             </Button>
-            </Stack>
+            
           </section>
 
           <Divider sx={{ margin: 10 }} ></Divider>
@@ -209,7 +200,7 @@ export default function Home() {
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>SaaS Platform</strong>
                     </Typography>
-                    <Typography align='center' variant="h6" color="text.secondary">
+                    <Typography align='center' variant="h6" color="text.secondary" sx={{ fontWeight: 'light' }}>
                       Created a SaaS platform using Next.js, Clerk, Stripe, and Firebase, using AI for personalized learning and secure payment processing.
                     </Typography>
                   </CardContent>
@@ -224,7 +215,7 @@ export default function Home() {
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Chatbot</strong>
                     </Typography>
-                    <Typography align='center' variant="h6" color="text.secondary">
+                    <Typography align='center' variant="h6" color="text.secondary" sx={{ fontWeight: 'light' }}>
                     Developed a tailored conversational AI system using Next.js and OpenAI incorporating user authentication with Firebase for data storage
                     </Typography>
                   </CardContent>
@@ -239,7 +230,7 @@ export default function Home() {
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Inventory Manager</strong>
                     </Typography>
-                    <Typography align='center' variant="h6" color="text.secondary">
+                    <Typography align='center' variant="h6" color="text.secondary" sx={{ fontWeight: 'light' }}>
                     Developed a robust inventory management system using Next.js, React, Firebase, and Vercel for efficient stock tracking and management.
                     </Typography>
                   </CardContent>
@@ -254,7 +245,7 @@ export default function Home() {
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Research Assistant</strong>
                     </Typography>
-                    <Typography align='center' variant="h6" color="text.secondary">
+                    <Typography align='center' variant="h6" color="text.secondary" sx={{ fontWeight: 'light' }}>
                     Created graph visualization dashboards using React and NodeJS for LLM applications.
                     </Typography>
                   </CardContent>
@@ -269,7 +260,7 @@ export default function Home() {
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Teaching Assistant</strong>
                     </Typography>
-                    <Typography align='center' variant="h6" color="text.secondary">
+                    <Typography align='center' variant="h6" color="text.secondary" sx={{ fontWeight: 'light' }}>
                     Developed and taught labs to enhance programming skills for students in embedded systems.                    </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -283,7 +274,7 @@ export default function Home() {
                     <Typography align='center' gutterBottom variant="h4" component="div">
                       <strong>Power Station Research</strong>
                     </Typography>
-                    <Typography align='center' variant="h6" color="text.secondary">
+                    <Typography align='center' variant="h6" color="text.secondary" sx={{ fontWeight: 'light' }}>
                     Analyzed the electricity transmission process, identifying improvement opportunities.                    </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -336,7 +327,7 @@ export default function Home() {
           {/* Journey starts */}
           <section id='journey'>
             <Box>
-          <Grid container rowSpacing={5} columnSpacing={3} ref={boxRef2} flexWrap={'wrap'}>
+          <Grid container rowSpacing={5} columnSpacing={3} ref={boxRef2} flexWrap={'wrap'} >
 
             <Grow in={checked3} style={{ transformOrigin: '0 0 0' }} {...(checked3 ? { timeout: 500 } : {})}>
               <Grid item md={4} xs={12}>
@@ -396,7 +387,7 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked3} style={{ transformOrigin: '0 0 0' }} {...(checked3 ? { timeout: 500 } : {})}>
-              <Grid item md={6} xs={12} display={'flex'} justifyContent={'flex-end'} >
+              <Grid item md={6} xs={12} display={'flex'}  >
               <CardActionArea sx={{ maxWidth: 500, minHeight: 400, borderRadius: 5 }} href='https://www.linkedin.com/company/j-s-auto-pvt-ltd/' >
                   <CardMedia 
                     component={'img'}
@@ -415,7 +406,7 @@ export default function Home() {
             </Grow>
 
             <Grow in={checked3} style={{ transformOrigin: '0 0 0' }} {...(checked3 ? { timeout: 1000 } : {})}>
-              <Grid item md={6} xs={12} display={'flex'} justifyContent={'flex-start'} >
+              <Grid item md={6} xs={12} display={'flex'}  >
               <CardActionArea sx={{ maxWidth: 500, minHeight: 400, borderRadius: 5 }} href='https://www.linkedin.com/school/punjab-engineering-college/' >
                   <CardMedia 
                     component={'img'}

@@ -48,7 +48,7 @@ export default function FullWidthGrid() {
         
         
             <Grid container>
-                <Grid item xs={6} md={4} lg={4}>
+                <Grid item xs={12} sm={6} md={4} lg={4}>
                     <CardActionArea
                         >
                         <CardContent>
@@ -63,7 +63,7 @@ export default function FullWidthGrid() {
                 </Grid>
 
 
-                <Grid item xs={6} md={4} lg={4}>
+                <Grid item xs={12} sm={6} md={4} lg={4}>
                     <CardActionArea >
                         <CardContent>
                             <Typography >
@@ -78,7 +78,7 @@ export default function FullWidthGrid() {
 
 
 
-                <Grid item xs={6} md={4} lg={4}>
+                <Grid item xs={12} sm={6} md={4} lg={4}>
                     <CardActionArea  >
                         <CardContent>
                             <Typography >
@@ -93,7 +93,7 @@ export default function FullWidthGrid() {
 
 
 
-                <Grid item xs={6} md={4} lg={4}>
+                <Grid item xs={12} sm={6} md={4} lg={4}>
                     <CardActionArea  >
                         <CardContent>
                             <Typography >
@@ -108,7 +108,7 @@ export default function FullWidthGrid() {
 
 
 
-                <Grid item xs={6} md={4} lg={4}>
+                <Grid item xs={12} sm={6} md={4} lg={4}>
                     <CardActionArea  >
                         <CardContent>
                             <Typography >
@@ -122,7 +122,7 @@ export default function FullWidthGrid() {
 
 
 
-                <Grid item xs={6} md={4} lg={4}>
+                <Grid item xs={12} sm={6} md={4} lg={4}>
                     <CardActionArea  >
                         <CardContent>
                             <Typography>
@@ -139,13 +139,13 @@ export default function FullWidthGrid() {
             
             </Box>
 
-            <Box display={'flex'} justifyContent={'center'}>
-                
-                <Stack direction={'row'} spacing={3}>
-                    <Typography variant="h1">Hello, I&apos;m</Typography>
-                    <Effect value="Deepanshu Chalia" />
+            <Box bgcolor={'grey'} padding={2}>
+                <Stack direction={'row'} spacing={2}>
+                    <Typography align='right' variant="h1" sx={{ fontWeight: 'light' }}>Hello, I&apos;m</Typography>
+                    <Effect value={"Deepanshu Chalia"}  />                   
                 </Stack>
             </Box>
+            
         </Container>
         </ThemeProvider>
         

@@ -25,8 +25,6 @@ export default function Effect(props) {
     
     return (
         <ThemeProvider theme={theme}>
-        
-            
             <Typography
                 variant='h1'
                 sx={{
@@ -34,10 +32,12 @@ export default function Effect(props) {
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                     backgroundSize: '200% 200%',
-                    animation: `${gradientAnimation} 2s ease infinite`
+                    animation: `${gradientAnimation} 2s ease infinite`,
+                    fontWeight: 'bold',
+                    textAlign: { xs: 'center', md: 'center', lg: 'left'},
                 }}
             >
-                <strong>{props.value}</strong>
+                {props.value}
             </Typography>
         
         </ThemeProvider>
