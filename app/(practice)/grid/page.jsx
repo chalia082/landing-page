@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { CardActionArea, CardContent, Container, Stack, Typography } from '@mui/material';
 import { Roboto } from 'next/font/google';
-import Effect from '@/app/components/fadetext';
+import Effect from '@/components/fadetext';
 
 
 const Item = styled(Paper)(({ theme }) => ({
