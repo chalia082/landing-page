@@ -65,7 +65,7 @@ export default function Portfolio() {
     
     return (
         <Box>
-            <Grid container ref={boxRef} flexWrap={'wrap'}>
+            <Grid container ref={boxRef} flexWrap={'wrap'} columnSpacing={2} rowSpacing={2}>
                 {experiences.map((experience, index) => (
                     <Grow in={checked} style={{ transformOrigin: '0 0 0' }} {...(checked ? { timeout: 1000 } : {})} key={index}>
                         <Grid item xs={12} sm={6} md={4} lg={4} 
@@ -81,6 +81,7 @@ export default function Portfolio() {
                                     minHeight: 250,
                                     maxWidth: { xs: '70vw' },
                                     borderRadius: 5, 
+                                    border: 1,
                                     alignContent: 'center' 
                                 }} 
                                 href={experience.href}
