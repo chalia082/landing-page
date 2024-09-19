@@ -8,7 +8,10 @@ const roboto = Roboto({
     display: 'swap',
 });
 
-let theme = createTheme({
+const lightTheme = createTheme({
+    palette: {
+        mode: 'light',
+    },
     typography: {
         fontFamily: roboto.style.fontFamily,
     },
@@ -23,7 +26,27 @@ let theme = createTheme({
     }
 });
 
-theme = responsiveFontSizes(theme);
+const darkTheme = createTheme({
+    palette: {
+        mode: 'dark',
+    },
+    typography: {
+        fontFamily: roboto.style.fontFamily,
+    },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    scrollBehavior : 'smooth',
+                }
+            }
+        }
+    }
+})
 
+const themes = {
+    light: responsiveFontSizes(lightTheme),
+    dark: responsiveFontSizes(darkTheme)
+}
 
-export default theme;
+export default themes;

@@ -12,7 +12,7 @@ export default function Footer() {
                 <IconButton color='inherit' target='_blank' href='https://www.instagram.com/deepanshu.chalia/' ><Instagram fontSize='large' /></IconButton>
                 <IconButton color='inherit' target='_blank' href='https://www.facebook.com/deepc82/' ><Facebook fontSize='large' /></IconButton>
             </Box>
-            <Typography variant='caption' sx={{ color: 'black' }}> © Deepc. All rights reserved</Typography>
+            <Typography variant='caption'> © Deepc. All rights reserved</Typography>
         </Box>
     )
 }

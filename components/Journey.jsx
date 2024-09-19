@@ -7,7 +7,7 @@ const journeys = [
     {
         title: 'Software Developer',
         orgainzation: 'Keelworks Org.',
-        period: '2024-Present',
+        period: '2024 - Present',
         image: '/keelworks.jpg',
         link: 'https://www.linkedin.com/company/keelworks-foundation/mycompany/'
 
@@ -15,28 +15,28 @@ const journeys = [
     {
         title: 'Software Engineer Fellow',
         orgainzation: 'Headstarter Co.',
-        period: '2024 (July-August)',
+        period: '2024 (July - August)',
         image: '/headstarter.png',
         link: 'https://www.linkedin.com/company/headstarterai/'
     },
     {
         title: 'Master of Science ',
         orgainzation: 'Computer Engineering',
-        period: '2022-2024',
+        period: '2022 - 2024',
         image: '/SMU_logo.png',
         link: 'https://www.linkedin.com/school/smulyle/'
     },
     {
         title: 'Junior Developer ',
         orgainzation: 'J.S. Auto Pvt Ltd',
-        period: '2020-2022',
+        period: '2020 - 2022',
         image: '/jsa.jpg',
         link: 'https://www.linkedin.com/company/j-s-auto-pvt-ltd/'
     },
     {
         title: 'Bachelor of Technology ',
         orgainzation: 'Electrical Engineering',
-        period: '2017-2021',
+        period: '2017 - 2021',
         image: '/pec-logo.png',
         link: 'https://www.linkedin.com/school/punjab-engineering-college/'
     }

@@ -1,22 +1,24 @@
 'use client'
 
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
-import theme from '../components/ui/theme';
-import { ThemeProvider } from '@emotion/react';
+// import { ThemeProvider } from '@emotion/react';
 import { Button, Container, CssBaseline, Divider, Stack,  Typography } from '@mui/material';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import MainPage from '@/components/MainPage';
 import Portfolio from '@/components/Portfolio';
 import Journey from '@/components/Journey';
+import themes from '../components/ui/theme';
+import { ThemeProvider } from '@/components/ui/ThemeContext';
 
 
 export default function Home() {
-
+  // console.log(themes);
+  
   return (
     <Container>
       <AppRouterCacheProvider>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider >
       <CssBaseline />
 
           <Navbar />
