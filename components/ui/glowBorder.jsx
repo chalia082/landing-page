@@ -26,9 +26,6 @@ const glowBorder = createTheme({
             }
         },
         MuiToolbar: {
-            defaultProps: {
-                disableGutters: true,
-            },
             styleOverrides: {
                 root: {
                     position: 'inherit',

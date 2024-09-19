@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@emotion/react";
 import glowBorder from "./ui/glowBorder";
-import { AppBar, Button, Stack, Toolbar } from "@mui/material";
+import { AppBar, Box, Button, Stack, Toolbar } from "@mui/material";
 
 
 export default function Navbar() {

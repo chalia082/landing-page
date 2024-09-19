@@ -20,7 +20,6 @@ export default function Home() {
       <CssBaseline />
 
           <Navbar />
-          
           <section id='home' > 
             <MainPage />
           </section>
@@ -30,8 +29,7 @@ export default function Home() {
           <section id='portfolio' >
             <Portfolio />
           </section>
-
-
+          
           <Stack
             sx={{
               direction: 'column',
