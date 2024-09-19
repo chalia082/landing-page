@@ -29,7 +29,7 @@ const journeys = [
     {
         title: 'Junior Developer ',
         orgainzation: 'J.S. Auto Pvt Ltd',
-        period: '2021-2022',
+        period: '2020-2022',
         image: '/jsa.jpg',
         link: 'https://www.linkedin.com/company/j-s-auto-pvt-ltd/'
     },

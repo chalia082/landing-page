@@ -14,7 +14,7 @@ import Journey from '@/components/Journey';
 export default function Home() {
 
   return (
-      <Container>
+    <Container>
       <AppRouterCacheProvider>
       <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -74,8 +74,10 @@ export default function Home() {
           <section id='contact'>
             <Footer />
           </section>
+        
         </ThemeProvider>
+        
       </AppRouterCacheProvider>
-      </Container>
+    </Container>
   );
 }
