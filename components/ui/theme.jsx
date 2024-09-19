@@ -15,6 +15,15 @@ let theme = createTheme({
     // palette: {
     //     mode: 'light',
     // },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    scrollBehavior : 'smooth',
+                }
+            }
+        }
+    }
 });
 
 theme = responsiveFontSizes(theme);

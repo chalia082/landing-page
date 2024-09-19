@@ -71,9 +71,7 @@ export default function Portfolio() {
                         <Grid item xs={12} sm={6} md={4} lg={4} 
                             sx={{
                                 display: 'flex',
-                                
                                 justifyContent: 'center',
-                                
                             }} 
                         >
                             <CardActionArea 
