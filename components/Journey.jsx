@@ -27,7 +27,7 @@ const journeys = [
         link: 'https://www.linkedin.com/school/smulyle/'
     },
     {
-        title: 'Junior Developer ',
+        title: 'Software Engineer',
         orgainzation: 'J.S. Auto Pvt Ltd',
         period: '2020 - 2022',
         image: '/jsa.jpg',

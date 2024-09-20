@@ -46,7 +46,7 @@ export default function Portfolio() {
             setChecked(true)
         } 
         }, {
-        threshold: 0.3
+        threshold: 0.2
         }
     )
 
