@@ -20,11 +20,7 @@ export default function RootLayout({ children }) {
           <link rel="icon" href="/favicon.png" sizes="48x48" />
       </Head>
       <body className={inter.className}>
-         <ThemeProvider>{children}</ThemeProvider>
-            
-            
-         
-          
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
