@@ -66,15 +66,11 @@ export default function MainPage() {
                                 loop: true,
                                 deleteSpeed: 10,
                                 delay: 40,
-                                
-
                             }}
                         />
                     </Typography>
                 </Stack>
             </Box>
-            
-
             <Box display={'flex'} justifyContent={'center'}>
                 <Button 
                     variant="conatined"
