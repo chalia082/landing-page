@@ -27,7 +27,7 @@ export default function Home() {
       <section id='portfolio' > <Portfolio /> </section>
       <Stack sx={{ direction: 'column', alignItems: 'center' }} >
         <Button
-          href='/Resume_Deepanshu_Chalia.pdf'
+          href='/Deepanshu_Chalia_Resume.pdf'
           target='_blank'
           variant="conatined"
           onClick={() => handleScroll('portfolio')}
