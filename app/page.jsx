@@ -39,8 +39,8 @@ export default function Home() {
               fontSize: 35,
               transition: 'color 0.5s ease-in-out, backgroundImage 0.5s ease-in-out ',
               ':hover': {
-                  backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-                  color: 'white', 
+                backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+                color: 'white', 
               },
               my: 10
           }}
