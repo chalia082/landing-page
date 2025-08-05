@@ -30,7 +30,7 @@ export default function Home() {
           href='/Deepanshu_Chalia_Resume.pdf'
           target='_blank'
           variant="conatined"
-          onClick={() => handleScroll('portfolio')}
+          // onClick={() => handleScroll('portfolio')}
           sx={{ 
               fontWeight: 'light',
               backgroundColor: 'inherit',
