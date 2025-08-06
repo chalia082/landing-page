@@ -3,35 +3,30 @@ import { useEffect, useRef, useState } from "react";
 
 const experiences = [
     {
-        title: 'SaaS Platform',
-        description: 'Created a SaaS platform using Next.js, Clerk, Stripe, and Firebase, using AI for personalized learning and secure payment processing.',
-        href: 'https://github.com/Headstarter-fellowship-projects/flashcard-saas/tree/Deep'
+        title: 'Text-2-SQL Agent',
+        description: 'AI-powered platform turning natural language into accurate SQL with real-time insights and modern UI.',
+        href: 'https://github.com/chalia082/text-2-sql'
     },
     {
-        title: 'Chatbot',
-        description: 'Developed a tailored conversational AI system using Next.js and OpenAI incorporating user authentication with Firebase for data storage',
-        href: 'https://github.com/Headstarter-fellowship-projects/ai_customer/tree/Deep'
+        title: 'Cynsus',
+        description: 'Built an MVP connecting entrepreneurs with investors through a secure, AI-driven platform using Next.js, OpenAI, and Firebase.',
+        href: 'https://www.cynsus.io/'
     },
     {
-        title: 'Inventory Manager',
-        description: 'Developed a robust inventory management system using Next.js, React, Firebase, and Vercel for efficient stock tracking and management.',
-        href: 'https://github.com/chalia082/Inventory-Management-System'
+        title: 'Student Dashboard',
+        description: 'Built a student dashboard for LMS using React and NodeJS to visualize learning data and streamline academic tracking.',
+        href: 'https://nextjs-tailwind-react.vercel.app/dashboard'
     },
-    {
-        title: 'Research Assistant',
-        description: 'Created graph visualization dashboards using React and NodeJS for LLM applications.',
-        href: 'https://www.linkedin.com/in/deep-chalia/details/experience'
-    },
-    {
-        title: 'Teaching Assistant',
-        description: 'Developed and taught labs to enhance programming skills for students in embedded systems.',
-        href: 'https://www.linkedin.com/in/deep-chalia/details/experience'
-    },
-    {
-        title: 'Power Station Research',
-        description: 'Analyzed the electricity transmission process, identifying improvement opportunities.',
-        href: 'https://www.linkedin.com/in/deep-chalia/details/experience'
-    }
+    // {
+    //     title: 'Teaching Assistant',
+    //     description: 'Developed and taught labs to enhance programming skills for students in embedded systems.',
+    //     href: 'https://www.linkedin.com/in/deep-chalia/details/experience'
+    // },
+    // {
+    //     title: 'Power Station Research',
+    //     description: 'Analyzed the electricity transmission process, identifying improvement opportunities.',
+    //     href: 'https://www.linkedin.com/in/deep-chalia/details/experience'
+    // }
 ]
 
 export default function Portfolio() {
@@ -83,6 +78,7 @@ export default function Portfolio() {
                                     alignContent: 'center' 
                                 }} 
                                 href={experience.href}
+                                target="_blank"
                             >
                                 <CardContent >
                                     <Typography align='center' gutterBottom variant="h4" component="div">

@@ -5,19 +5,19 @@ import { useEffect, useRef, useState } from "react";
 
 const journeys = [
     {
+        title: 'Fullstack Engineer (part-time)',
+        orgainzation: 'WorldLink US',
+        period: '2025 (May - August)',
+        image: '/worldlink-logo.png',
+        link: 'https://www.linkedin.com/company/worldlink-us/posts/?feedView=all'
+    },
+    {
         title: 'Software Developer',
         orgainzation: 'Keelworks Org.',
         period: '2024 - Present',
         image: '/keelworks.jpg',
         link: 'https://www.linkedin.com/company/keelworks-foundation/mycompany/'
 
-    },
-    {
-        title: 'Software Engineer Fellow',
-        orgainzation: 'Headstarter Co.',
-        period: '2024 (July - August)',
-        image: '/headstarter.png',
-        link: 'https://www.linkedin.com/company/headstarterai/'
     },
     {
         title: 'Master of Science ',
@@ -80,7 +80,9 @@ export default function Journey() {
                                 borderRadius: 5 ,
                                 border: 1,
                             }} 
-                            href={journey.link} >
+                            href={journey.link} 
+                            target="_blank"
+                        >
                                 <CardMedia 
                                     component={'img'}
                                     sx={{ 
@@ -95,7 +97,6 @@ export default function Journey() {
                                         <Typography variant="h5" >{journey.title}</Typography>
                                         <Typography variant="body">{journey.orgainzation}</Typography>
                                         <Typography variant="caption">{journey.period}</Typography>
-
                                     </Stack>
                                 </CardContent>
                         </CardActionArea>

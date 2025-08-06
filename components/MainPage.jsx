@@ -38,7 +38,7 @@ export default function MainPage() {
 						borderRadius: '50%',
 					}}
 					alt="Descriptive Alt Text"
-					src="/Deepc.jpg"
+					src="/Deepc.png"
 				/>
 				<Stack direction={'column'} spacing={2} sx={{ alignItems: { lg: 'left'} }} > 
 					<Fade in={fadeChecked} timeout={2000} style={{ transitionDelay: fadeChecked ? '0ms' : '2000ms' }}>

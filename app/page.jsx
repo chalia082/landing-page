@@ -30,19 +30,18 @@ export default function Home() {
           href='/Deepanshu_Chalia_Resume.pdf'
           target='_blank'
           variant="conatined"
-          // onClick={() => handleScroll('portfolio')}
           sx={{ 
-              fontWeight: 'light',
-              backgroundColor: 'inherit',
-              margin: 0.5,
-              borderRadius: 10,
-              fontSize: 35,
-              transition: 'color 0.5s ease-in-out, backgroundImage 0.5s ease-in-out ',
-              ':hover': {
-                backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-                color: 'white', 
-              },
-              my: 10
+            fontWeight: 'light',
+            backgroundColor: 'inherit',
+            margin: 0.5,
+            borderRadius: 10,
+            fontSize: 35,
+            transition: 'color 0.5s ease-in-out, backgroundImage 0.5s ease-in-out ',
+            ':hover': {
+              backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+              color: 'white', 
+            },
+            my: 10
           }}
         >
           Resume
