@@ -14,7 +14,7 @@ const journeys = [
     {
         title: 'Software Developer',
         orgainzation: 'Keelworks Org.',
-        period: '2024 - Present',
+        period: '2024 - 2025',
         image: '/keelworks.jpg',
         link: 'https://www.linkedin.com/company/keelworks-foundation/mycompany/'
 
