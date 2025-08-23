@@ -3,6 +3,11 @@ import { useEffect, useRef, useState } from "react";
 
 const experiences = [
     {
+        title: 'E-commerce',
+        description: 'Full‑stack e‑commerce app with Django REST + JWT backend and a responsive React + Vite frontend, featuring secure checkout and order tracking.',
+        href: 'https://github.com/chalia082/django-store'
+    },
+    {
         title: 'Text-2-SQL Agent',
         description: 'AI-powered platform turning natural language into accurate SQL with real-time insights and modern UI.',
         href: 'https://github.com/chalia082/text-2-sql'
